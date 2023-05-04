@@ -1,0 +1,93 @@
+.masthead {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "menu_search . action_buttons"
+        ". technologies . "
+        "date logo paper";
+}
+
+.m_menu_search {
+    grid-area: menu_search;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.m_s_buttons {
+    font-size: 12px;
+    padding: 12px 9px;
+
+}
+
+.m_s_buttons:hover {
+    background-color: rgb(231, 229, 229);
+}
+
+.m_action_buttons {
+    grid-area: action_buttons;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.m_technologies {
+    grid-area: technologies;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 1px;
+}
+
+.coding_langs {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: darkgray;
+    text-align: center;
+    border: 1px solid lightgrey;
+    border-bottom: none;
+    background-color: white;
+
+}
+
+.coding_langs>span {
+    margin: 0 3px;
+}
+
+.m_date {
+    grid-area: date;
+    font-size: 11px;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 11px;
+    border-top: 1px solid lightgrey;
+
+
+}
+
+.m_logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 11px;
+    border-top: 1px solid lightgrey;
+
+}
+
+.m_paper {
+    grid-area: paper;
+    font-size: 11px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 11px;
+    border-top: 1px solid lightgrey;
+
+}

@@ -1,0 +1,255 @@
+#main_layout {
+    display: flex;
+    width: fit-content;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-areas:
+        "title title"
+        "leftside leftside"
+        "bottom bottom";
+        border-bottom: 2px solid black;
+        border-right: 1px solid lightgrey;
+        margin-bottom: 100px;
+
+
+}
+
+#title_of_article {
+    grid-area: title;
+    font-weight: bold;
+    font-size: 30px;
+    font-style: italic;
+    line-height: 35px;
+    text-transform: capitalize;
+    padding: 15px 0;
+}
+
+#leftside {
+    grid-area: leftside;
+    display: flex;
+    padding-bottom: 85px;
+    border-bottom: 2px solid black;
+
+
+}
+
+#leftside nav ul {
+    list-style: disc;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
+    width: 480px;
+    padding-right: 20px;
+}
+
+#leftside li {
+    padding: 10px;
+}
+
+.comments {
+    display: contents;
+    color: rgb(74, 184, 253);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+
+
+}
+
+.subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    font-style: italic;
+    padding-bottom: 30px;
+    padding-right: 10px;
+
+}
+
+.authors {
+    text-transform: capitalize;
+    color: gray;
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+iframe {
+    padding-right: 15px;
+}
+#caption {
+    display: block;
+
+}
+
+.bottom_articles {
+    display: flex;
+    padding-top: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding-bottom: 40px;
+
+
+}
+
+#where {
+    border-right: 1px solid lightgray;
+    margin-right: 8px;
+    text-align: left;
+    width: max-content;
+}
+.bottom_articles  p {
+    font-size: 12px;
+}
+#cat {
+    width: fit-content;
+    padding-bottom: 12px;
+    text-align: left;
+    padding-left: 8px;
+}
+
+.headline {
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "opinions opinions"
+        "office office"
+        "m1 m2"
+        "m3 m4"
+        "m5 m6"
+        "m7 .";
+    padding: 20px 0 0 30px;
+    margin-left: 5px;
+    margin-bottom: 100px;
+
+
+}
+
+
+#opinions {
+    grid-area: opinions;
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+
+}
+#opinions p {
+    padding-top: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+}
+
+
+#h2opinions{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: normal;
+    padding-bottom: 20px;
+}
+#opi {
+    color: gray;
+    text-transform: uppercase;
+    display: block;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#image {
+    background-image: url("../../images/new_office.jpg");
+    height: 100px;
+    width: 380px;
+    background-position: 50% 50%;
+
+
+}
+#office {
+    grid-area: office;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+#office > p {
+    padding-top: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.miniheading {
+    padding: 10px;
+    padding-right: 20px;
+
+
+    }
+    .minititle{
+        padding-bottom: 10px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    .name {
+        display: block;
+        color: gray;
+        font-size: 12px;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+#m1 {
+    grid-area: m1;
+
+
+}
+
+#m2 {
+    grid-area: m2;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+
+}
+
+#m3 {
+    grid-area: m3;
+    border-right: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+#m4 {
+    grid-area: m4;
+    border-bottom: 1px solid lightgray;
+}
+
+#m5 {
+    grid-area: m5;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+#m6 {
+    grid-area: m6
+}
+
+#m7 {
+    grid-area: m7;
+    border-right: 1px solid lightgray;
+}
+@media screen and (max-width: 1200px) {
+    .grid2 {
+        display: none;
+    }
+
+}
